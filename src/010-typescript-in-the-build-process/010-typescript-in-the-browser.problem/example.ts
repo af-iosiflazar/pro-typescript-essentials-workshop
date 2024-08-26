@@ -1,5 +1,5 @@
-const run = (message: string) => {
+const run = (message) => {
   console.log(message);
 };
 
-run("Hello!");
+run("Hello running TS!");
