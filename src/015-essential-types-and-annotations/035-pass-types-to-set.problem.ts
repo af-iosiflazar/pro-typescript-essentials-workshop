@@ -1,6 +1,6 @@
 // CODE
 
-const userIds = new Set();
+const userIds = new Set<number>();
 
 // TESTS
 
@@ -12,3 +12,5 @@ userIds.add(3);
 userIds.add("123");
 // @ts-expect-error
 userIds.add({ name: "Max" });
+
+export {};

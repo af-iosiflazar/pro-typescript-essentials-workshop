@@ -3,6 +3,7 @@
 // How do we type 'items' in the ShoppingCart?
 type ShoppingCart = {
   userId: string;
+  items: string[];
 };
 
 // TESTS
@@ -15,3 +16,5 @@ processCart({
   userId: "user123",
   items: ["item1", "item2", "item3"],
 });
+
+export {};

@@ -1,6 +1,11 @@
+type Person = {
+  name: string;
+  age: number;
+};
+
 // CODE
 
-const userMap = new Map();
+const userMap: Map<number, Person> = new Map();
 
 // TESTS
 
@@ -12,3 +17,5 @@ userMap.set("3", { name: "Anna", age: 29 });
 
 // @ts-expect-error
 userMap.set(3, "123");
+
+export {};
