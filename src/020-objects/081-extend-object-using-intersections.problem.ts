@@ -1,15 +1,16 @@
 import { Extends, Expect } from "@total-typescript/helpers";
 
-type User = {
+type DBO = {
   id: string;
   createdAt: Date;
+};
+
+type User = DBO & {
   name: string;
   email: string;
 };
 
-type Product = {
-  id: string;
-  createdAt: Date;
+type Product = DBO & {
   name: string;
   price: number;
 };
@@ -36,5 +37,5 @@ type tests = [
       },
       Product
     >
-  >,
+  >
 ];

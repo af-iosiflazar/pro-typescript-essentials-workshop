@@ -1,6 +1,11 @@
 type Environment = "development" | "production" | "staging";
 
-type Configurations = unknown;
+type Configuration = {
+  apiBaseUrl: string;
+  timeout: number;
+};
+
+type Configurations = Record<Environment, Configuration>;
 
 const configurations: Configurations = {
   development: {
